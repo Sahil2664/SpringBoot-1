@@ -27,4 +27,8 @@ public class StudentService {
         return student;
 
     }
+
+    public Iterable<Student> getStudents() {
+        return studentRepository.findAll();
+    }
 }
